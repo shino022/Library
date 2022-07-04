@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --background-color: #e2e8f0;
+}
+
+body {
+  background-color: var(--background-color);
+  padding:15px;
+}
+
+.openButton {
+  align-items: center;
+  height: 40px;
+  width: 240px;
+  margin-bottom:15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:large;
+  font-weight: 600;
+  border-width: 0;
+  border-radius: 8px;
+  background-color: #0074e8;
+  color: white;
+}
+
+.formPopup {
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  position:absolute;
+  top:0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+.formPopup.show {
+  visibility: visible;
+}
+
+.formPopup form {
+  padding:30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 100px;
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  gap:5px;
+}
+
+#popupForm > form > div:nth-child(1) {
+  align-self: center;
+  padding-bottom: 15px;
+  font-weight: 900;
+}
+
+.formPopup form div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: stretch;
+} 
+
+#popupForm > form > div:nth-child(5) {
+  display: block;
+}
+
+input {
+  flex-grow: 1;
+  margin-left: 3px;
+}
+
+input #read {
+  justify-self: left;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.card {
+  width:220px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card > .title {
+  font-family: 'Open Sans', sans-serif;
+  font-size:24px;
+  font-weight: 700;
+  white-space: initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card > .author {
+  font-family: 'Open Sans', sans-serif;
+  font-size:large;
+  font-weight: 500;
+  white-space: initial;
+}
+
+.card > .numPages {
+  font-family: 'Open Sans', sans-serif;
+  font-size:14px;
+  font-weight: 500;
+  white-space: initial;
+  margin-bottom: 20px;
+
+}
+.card button {
+  align-items: center;
+  height: 40px;
+  width: 80%;
+  font-family: 'Open Sans', sans-serif;
+  font-size:large;
+  font-weight: 600;
+  border-width: 0;
+  border-radius: 8px;
+}
+
+.card #readButton {
+  color:white;
+  background-color: #f87171;
+  margin-bottom: 5px;
+}
+.card #readButton.read{
+  background-color: #4ade80;
+}
+
+.card #removeButton {
+  color: #ef4444;
+  background-color: white;
+  border:1px solid #d1d5db 
+}
+
